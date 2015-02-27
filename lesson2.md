@@ -81,10 +81,60 @@ protected void saveActivityPreferences() {
 }
 ```
 
+###Ссылки:
+[](http://developer.alexanderklimov.ru/android/theory/sharedpreferences.php)
+[](http://startandroid.ru/ru/uroki/vse-uroki-spiskom/73-urok-33-hranenie-dannyh-preferences)
+[](http://developer.android.com/reference/android/content/SharedPreferences.html)
+
 ##2) SQLite + SQL
 
 ##3) Файлы
+Все приложения в андроиде живут в отдельных контейнерах и по умолчанию не могут друг с другом взаимодействовать. Как следствие, все файл конкретного приложения хранятся в своем контейнере.
+Примеры записи файлов:
+```java
+final String FILENAME = "file.txt";
+  
+void writeFile() {
+    try {
+      // отрываем поток для записи
+      BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
+          openFileOutput(FILENAME, MODE_PRIVATE)));
+      // пишем данные
+      bw.write("Содержимое файла");
+      // закрываем поток
+      bw.close();
+      Log.d(LOG_TAG, "Файл записан");
+    } catch (FileNotFoundException e) {
+      e.printStackTrace();
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
 
+  void readFile() {
+    try {
+      // открываем поток для чтения
+      BufferedReader br = new BufferedReader(new InputStreamReader(
+          openFileInput(FILENAME)));
+      String str = "";
+      // читаем содержимое
+      while ((str = br.readLine()) != null) {
+        Log.d(LOG_TAG, str);
+      }
+    } catch (FileNotFoundException e) {
+      e.printStackTrace();
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
+```
+Читать-писать можно посимвольно, построчно и буфером определенного размера
+
+###Ссылки
+[](http://startandroid.ru/ru/uroki/vse-uroki-spiskom/138-urok-75-hranenie-dannyh-rabota-s-fajlami.html)
+[](http://developer.alexanderklimov.ru/android/texteditor.php)
+[](http://developer.android.com/reference/java/io/BufferedReader.html)
+[](http://developer.android.com/reference/java/io/BufferedWriter.html)
 ##4) Assets
 
 ##5) ORM (object-related-mapping)
