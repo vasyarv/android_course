@@ -82,11 +82,38 @@ protected void saveActivityPreferences() {
 ```
 
 ###Ссылки:
-(http://developer.alexanderklimov.ru/android/theory/sharedpreferences.php)
-(http://startandroid.ru/ru/uroki/vse-uroki-spiskom/73-urok-33-hranenie-dannyh-preferences)
-(http://developer.android.com/reference/android/content/SharedPreferences.html)
+http://developer.alexanderklimov.ru/android/theory/sharedpreferences.php
+
+http://startandroid.ru/ru/uroki/vse-uroki-spiskom/73-urok-33-hranenie-dannyh-preferences
+
+http://developer.android.com/reference/android/content/SharedPreferences.html
 
 ##2) SQLite + SQL
+
+SQLite - реляционная СУБД (Система Управления Баз Данных)
+Базой данных (БД) называется организованная в соответствии с определенными правилами и поддерживаемая в памяти компьютера совокупность сведений об объектах, процессах, событиях или явлениях, относящихся к некоторой предметной области, теме или задаче. Она организована таким образом, чтобы обеспечить информационные потребности пользователей, а также удобное хранение этой совокупности данных, как в целом, так и любой ее части.
+
+Реляционная БД состоит из таблиц (как Excel), где строки - отдельные записи, столбцы - признаки (id, имя, возраст, ... )
+
+SQL - язык запросов к реляционной БД. 
+
+Простейший синтаксис:
+```sql
+select name,age --столбцы
+from people --имя таблицы
+where age > 18 and name <> 'Василий' --условия
+order by name --сортируем по имени
+limit 10 --выводим 10 записе
+```
+Можно объединять таблицы с помощью `join`
+В различных СУБД может быть слегка разный синтаксис.
+
+###Ссылки
+[Синтаксис](http://developer.alexanderklimov.ru/android/sqlite/azbuka-sqlite.php)
+
+http://developer.alexanderklimov.ru/android/sqlite/simplydatabase.php
+
+
 
 ##3) Файлы
 Все приложения в андроиде живут в отдельных контейнерах и по умолчанию не могут друг с другом взаимодействовать. Как следствие, все файл конкретного приложения хранятся в своем контейнере.
@@ -131,10 +158,13 @@ void writeFile() {
 Читать-писать можно посимвольно, построчно и буфером определенного размера
 
 ###Ссылки
-[](http://startandroid.ru/ru/uroki/vse-uroki-spiskom/138-urok-75-hranenie-dannyh-rabota-s-fajlami.html)
-[](http://developer.alexanderklimov.ru/android/texteditor.php)
-[](http://developer.android.com/reference/java/io/BufferedReader.html)
-[](http://developer.android.com/reference/java/io/BufferedWriter.html)
+http://startandroid.ru/ru/uroki/vse-uroki-spiskom/138-urok-75-hranenie-dannyh-rabota-s-fajlami.html
+
+http://developer.alexanderklimov.ru/android/texteditor.php
+
+http://developer.android.com/reference/java/io/BufferedReader.html
+
+http://developer.android.com/reference/java/io/BufferedWriter.html
 ##4) Assets
 
 ##5) ORM (object-related-mapping)
