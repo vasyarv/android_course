@@ -10,26 +10,33 @@ SharedPreferences sPref;
 ````
   
 Получаем преферны:
-`  sPref = getPreferences(MODE_PRIVATE);`
-
+```java  
+  sPref = getPreferences(MODE_PRIVATE);
+```
 Редактирование:
-`  Editor ed = sPref.edit();`
-  ИЛИ
-`  SharedPrefernces.Editor ed = sPref.edit();`
-  
+```java  
+  Editor ed = sPref.edit();
+  //ИЛИ
+  SharedPrefernces.Editor ed = sPref.edit();
+```
 Добавление элемента:
-`  ed.putString("key", "value"); //также putInt , putFloat и т.д.
-  ed.commit(); //закрываем редактор`
-  
+```java  
+  ed.putString("key", "value"); //также putInt , putFloat и т.д.
+  ed.commit(); //закрываем редактор
+ ```
 Получение элемента по ключу
   Здесь редактор НЕ нужен
+ ```java  
 `  String some_value = sPref.getString("key", "default_value");  //если не получилось вернуть значение по ключу или ключ не найден   - возвращается default_value`
+  ```
   
-  SharedPreferences хранятся в файле.
+  SharedPreferences хранятся в файле: `/data/data/имя_пакета/shared_prefs/имя_файла_настроек.xml.`
   Можно отловить первый запуск приложения.
   
 Проверка наличия ключа
-`  Boolean b = sPref.contains("key2");`
+```java   
+Boolean b = sPref.contains("key2");
+```
 
 Ключ - всегда строка
   
@@ -57,6 +64,22 @@ public void onShowSettings(View v)
 } 
 ```
   
+Можно создавать отдельные преференции для каждой активити
+
+```java
+protected void saveActivityPreferences() {
+    // Создайте или извлеките объект настроек активности.
+    SharedPreferences activityPreferences = getPreferences(Activity.MODE_PRIVATE);
+    // Извлеките редактор, чтобы изменить Общие настройки.
+    SharedPreferences.Editor editor = activityPreferences.edit();
+    // Извлеките представление.
+    TextView myTextView = (TextView)findViewById(R.id.myTextView);
+    // Запишите новые значения примитивных типов в объект Общих настроек.
+    editor.putString("currentTextValue", myTextView.getText().toString());
+    // Сохраните изменения.
+    editor.commit();
+}
+```
 
 ##2) SQLite + SQL
 
