@@ -82,9 +82,9 @@ protected void saveActivityPreferences() {
 ```
 
 ###Ссылки:
-[](http://developer.alexanderklimov.ru/android/theory/sharedpreferences.php)
-[](http://startandroid.ru/ru/uroki/vse-uroki-spiskom/73-urok-33-hranenie-dannyh-preferences)
-[](http://developer.android.com/reference/android/content/SharedPreferences.html)
+(http://developer.alexanderklimov.ru/android/theory/sharedpreferences.php)
+(http://startandroid.ru/ru/uroki/vse-uroki-spiskom/73-urok-33-hranenie-dannyh-preferences)
+(http://developer.android.com/reference/android/content/SharedPreferences.html)
 
 ##2) SQLite + SQL
 
