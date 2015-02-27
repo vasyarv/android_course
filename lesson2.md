@@ -5,7 +5,7 @@
 Набор пар ключ-значение, которые можно получить в любом месте из приложения.
 
 Создаем глобальную переменную
-  SharedPreferences sPref;
+'  SharedPreferences sPref;'
   
 Получаем преферны:
   sPref = getPreferences(MODE_PRIVATE);
@@ -31,12 +31,36 @@
 
 Ключ - всегда строка
   
+Работа с наборами ( <set> )
+SharedPreferences sp;
+String catnames;
 
-2) SQLite + SQL
+// записываем имена котов в файл настроек
+public void onPutSettings(View v){
+	Set<String> catnames = new HashSet<String>();
+	catnames.add("Мурзик");
+	catnames.add("Барсик");
+	catnames.add("Рыжик");
+	Editor e = sp.edit();
+	e.putStringSet("strSetKey", catnames);
+	e.apply();
+}
 
-3) Файлы
+// считываем имена котов обратно
+public void onShowSettings(View v)
+{
+ 	Set<String> ret = sp.getStringSet("strSetKey", new HashSet<String>());
+	for(String r : ret) {
+	    Log.i("Share", "Имя кота: " + r);
+	}
+}
+  
 
-4) Assets
+##2) SQLite + SQL
 
-5) ORM (object-related-mapping)
+##3) Файлы
+
+##4) Assets
+
+##5) ORM (object-related-mapping)
 
