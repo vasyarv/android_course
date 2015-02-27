@@ -5,7 +5,9 @@
 Набор пар ключ-значение, которые можно получить в любом месте из приложения.
 
 Создаем глобальную переменную
-`  SharedPreferences sPref;`
+```java  
+SharedPreferences sPref;
+````
   
 Получаем преферны:
 `  sPref = getPreferences(MODE_PRIVATE);`
@@ -33,7 +35,7 @@
   
 Работа с наборами ( <set> )
 
-`
+```java
 // Добавление элемента
 public void onPutSettings(View v){
 	Set<String> names = new HashSet<String>();
@@ -52,7 +54,8 @@ public void onShowSettings(View v)
 	for(String r : ret) {
 	    Log.i("Share", "Имя: " + r);
 	}
-}`
+} 
+```
   
 
 ##2) SQLite + SQL
