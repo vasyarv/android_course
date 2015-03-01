@@ -11,7 +11,7 @@ SharedPreferences sPref;
   
 Получаем преферны:
 ```java  
-  sPref = getPreferences(MODE_PRIVATE);
+  sPref = getSharedPreferences("filename-for-preferences",Contex.MODE_PRIVATE);
 ```
 Редактирование:
 ```java  
@@ -64,7 +64,7 @@ public void onShowSettings(View v)
 } 
 ```
   
-Можно создавать отдельные преференции для каждой активити
+Можно создавать отдельные преференции для каждой активити. Тогда метод `getSharedPreferences` сменяется на `getPreferences`
 
 ```java
 protected void saveActivityPreferences() {
