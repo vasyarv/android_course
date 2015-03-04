@@ -42,3 +42,7 @@ Android Studio: http://developer.android.com/sdk/index.html
  * [LearnJavaOnline](http://www.learnjavaonline.org/) - не компилится
  * Java/J2EE Job Interview Companion By K.Arulkumaran
  * [Климов](http://developer.alexanderklimov.ru/android/java/java.php)
+
+##Задания
+ 1. Настроить JDK, Android Studio, создать эмулятор или подключить телефон
+ 2. Подумать над проектом, который хотелось бы реализовать
