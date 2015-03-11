@@ -30,3 +30,47 @@ public class ИмяКласса {  //имя класса с большой бу�
   
 }
 ```
+Методы могут содержать параметры
+
+```java
+public int square(int a, int b) {
+  return a*b;
+}
+```
+В рамках одного класса может быть несколько методов с одним названием, но разными параметрами
+```java
+public int square(int a, int b) {
+  return a*b;
+}
+
+public int square(int a) {
+  return a*a;
+}
+```
+
+Можно ввести методы с переменным числом параметров
+
+```java
+public static double getMaxValue(double... values) {
+    double largest = Double.MIN_VALUE;
+    for(double v : values) {
+        if (v > largest) {
+            largest = v;
+        }
+    }
+    return largest;
+}
+```
+Параметры метода, могут совпадать со свойствами класса, но тогда, чтобы из различить нужно использовать слово `this`.
+```java
+public class Class {  
+  public int a;
+  public String b; 
+  
+  public void changeAB(int a, int b){ 
+    this.a = a;  //a - параметр, this.a - свойство
+    this.b = b;
+  }
+  
+}
+```
