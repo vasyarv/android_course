@@ -4,7 +4,7 @@
 [Hello world, структура проекта, особенности платформы. Создание эмулятора или подключение телефона. GenyMotion. Введение в Java.](https://github.com/vasyarv/android_course/tree/master/lesson1)
 
 ##2 занятие, 11 марта
-Основы Java. Типы данных и операции над ними. ООП в Java: абстракция, инкапсуляция, наследование, полиморфизм.
+[Основы Java. Типы данных и операции над ними. ООП в Java: абстракция, инкапсуляция, наследование, полиморфизм.](https://github.com/vasyarv/android_course/tree/master/lesson2)
 
 ##3 занятие, 18 марта
 Gradle, Manifest. Класс Activity и его жизненный цикл. Структура xml файлов. layout.xml файлы Activity. Класс View и элементы Layout: TextView, Button, EditText ... Layout-group: LinearLayout, RelativeLayout. Относительное/абсолютное задание размеров элементов. Обработчики нажатия.
