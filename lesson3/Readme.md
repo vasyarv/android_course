@@ -25,7 +25,7 @@ dependencies {
 <?xml version="1.0" encoding="utf-8"?>
 ```
 Пример xml файла
-```
+```xml
 <contacts>
     <contact
         first_name="Иван"
@@ -185,7 +185,6 @@ dependencies {
     }
 }
 ```
-
     4. Изменим файл манифеста
 ```xml
         <activity
