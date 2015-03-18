@@ -222,6 +222,7 @@ http://startandroid.ru/ru/materialy/pamjatka/40-edinitsy-izmerenija-chem-otlicha
 
 ####Получение элемента
 setContentView(R.layout.activity_main);
+
 ```java
 Button b = (Button) findViewById(R.id.button);
 ```
@@ -234,19 +235,24 @@ setContentView(R.layout.activity_main);
 Существует специальный файл, в котором лежат id всех элементов приложения.
 
 ####Создание обработчика нажатий
-    1. Через XML
-    В xml описание нашей кнопки добавляем свойство
+1. Через XML
+
+В xml описание нашей кнопки добавляем свойство
+    
 ```xml
     android:onClick="onClick"
 ```
+
     В Activity создаем метод onClick.
+    
 ```java
     public void onClick(View view){
         //some staff
     }
 ```
 
-    2. Программно 
+2. Программно 
+    
 ```java
 Button b = (Button) findViewById(R.id.button);
         b.setOnClickListener(new View.OnClickListener() {
@@ -257,9 +263,11 @@ Button b = (Button) findViewById(R.id.button);
             }
         });
 ```
-    3. Через интерфейс
-    Имплементим интерфейс `public class MainActivity extends ActionBarActivity implements View.OnClickListener`
-    Он содержит единственный метод onClick, который и нужно реализовать.
+
+3. Через интерфейс
+Имплементим интерфейс `public class MainActivity extends ActionBarActivity implements View.OnClickListener`
+Он содержит единственный метод onClick, который и нужно реализовать.
+    
 ```java
  public void onClick(View v) {
         switch(v.getId()){
