@@ -7,7 +7,7 @@
 [Основы Java. Типы данных и операции над ними. ООП в Java: абстракция, инкапсуляция, наследование, полиморфизм.](https://github.com/vasyarv/android_course/tree/master/lesson2)
 
 ##3 занятие, 18 марта
-Gradle, Manifest. Класс Activity и его жизненный цикл. Структура xml файлов. layout.xml файлы Activity. Класс View и элементы Layout: TextView, Button, EditText ... Layout-group: LinearLayout, RelativeLayout. Относительное/абсолютное задание размеров элементов. Обработчики нажатия.
+[Gradle, Manifest. Класс Activity и его жизненный цикл. Структура xml файлов. layout.xml файлы Activity. Класс View и элементы Layout: TextView, Button, EditText ... Layout-group: LinearLayout, RelativeLayout. Относительное/абсолютное задание размеров элементов. Обработчики нажатия.](https://github.com/vasyarv/android_course/tree/master/lesson2)
 
 ##4 занятие, 25 марта
 Intent. Implicitintents и Explicitintents. Передача данных между активити. Всплывающие сообщения и диалоги. Меню. Создание кастомного диалога. Темы и стили. 9 patch. Портретная/альбомная ориентация и разные размеры экрана.
