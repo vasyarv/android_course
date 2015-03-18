@@ -288,3 +288,5 @@ Button b = (Button) findViewById(R.id.button);
 
 [Создание кастомного списка](http://habrahabr.ru/post/133575/)
 
+###Задание
+Сделайте Activity и layout своих приложений
