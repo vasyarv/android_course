@@ -235,7 +235,7 @@ setContentView(R.layout.activity_main);
 Существует специальный файл, в котором лежат id всех элементов приложения.
 
 ####Создание обработчика нажатий
-1. Через XML
+1.Через XML
 
 В xml описание нашей кнопки добавляем свойство
     
@@ -251,7 +251,7 @@ setContentView(R.layout.activity_main);
     }
 ```
 
-2. Программно 
+2.Программно 
     
 ```java
 Button b = (Button) findViewById(R.id.button);
@@ -264,7 +264,7 @@ Button b = (Button) findViewById(R.id.button);
         });
 ```
 
-3. Через интерфейс
+3.Через интерфейс
 Имплементим интерфейс `public class MainActivity extends ActionBarActivity implements View.OnClickListener`
 Он содержит единственный метод onClick, который и нужно реализовать.
     
@@ -283,7 +283,8 @@ Button b = (Button) findViewById(R.id.button);
         }
     }
 ```
-    Добавляем обработчик событий `b.setOnClickListener(this);`
 
+Добавляем обработчик событий `b.setOnClickListener(this);`
 
+[Создание кастомного списка](http://habrahabr.ru/post/133575/)
 
