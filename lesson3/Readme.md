@@ -199,6 +199,84 @@ dependencies {
 
 Жизненный цикл активити:
 http://developer.android.com/reference/android/app/Activity.html
+
 Изучение поведения активити
 http://habrahabr.ru/post/201214/
-Можно делать таски, которые запретят иметь более двух сущностей одной активити
+
+Можно ввести запрет на наличие более одного экземпляра одной активити.
+
+###View
+Класс реализующий базовые элементы интерфейса. Представлен в виде прямоугольной области. Отрисовывает элемент и обрабатывает нажатия. Является классом родителем для всех UI - элементов.
+Обязательно нужно указывать `layout_width` и `layout_height`
+
+Дети: **ViewGroup**, TextView, EditText, Button, List ...
+
+Layout & Margin:
+http://stackoverflow.com/questions/4619899/difference-between-a-views-padding-and-margin
+
+###sp dp px
+Размеры View элементов можно указывать по-разному. px - в пикселях, sp,dp - относительные размеры.
+http://developer.android.com/guide/practices/screens_support.html
+http://stackoverflow.com/questions/2025282/difference-between-px-dp-dip-and-sp-in-android
+http://startandroid.ru/ru/materialy/pamjatka/40-edinitsy-izmerenija-chem-otlichaetsja-dp-dip-ot-px-screen-density
+Самое важное, что следует вынести из этого раздела - **всегда** размеры нужно указывать в sp или dp и только в случае крайней необходимости  - px.
+
+####Получение элемента
+setContentView(R.layout.activity_main);
+```java
+Button b = (Button) findViewById(R.id.button);
+```
+Вызывать это нужно ПОСЛЕ
+```java
+setContentView(R.layout.activity_main);
+```
+
+####R.java
+Существует специальный файл, в котором лежат id всех элементов приложения.
+
+####Создание обработчика нажатий
+    1. Через XML
+    В xml описание нашей кнопки добавляем свойство
+```xml
+    android:onClick="onClick"
+```
+    В Activity создаем метод onClick.
+```java
+    public void onClick(View view){
+        //some staff
+    }
+```
+
+    2. Программно 
+```java
+Button b = (Button) findViewById(R.id.button);
+        b.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this,AskActivity.class);
+                startActivity(i);
+            }
+        });
+```
+    3. Через интерфейс
+    Имплементим интерфейс `public class MainActivity extends ActionBarActivity implements View.OnClickListener`
+    Он содержит единственный метод onClick, который и нужно реализовать.
+```java
+ public void onClick(View v) {
+        switch(v.getId()){
+            case R.id.button:
+                //some code
+                break;
+            case R.id.button2:
+                ///
+                break;
+            case R.id.button3:
+                ///
+                break;
+        }
+    }
+```
+    Добавляем обработчик событий `b.setOnClickListener(this);`
+
+
+
