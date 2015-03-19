@@ -1,4 +1,6 @@
-##Gradle, Manifest. Класс Activity и его жизненный цикл. Структура xml файлов. layout.xml файлы Activity. Класс View и элементы Layout: TextView, Button, EditText ... Layout-group: LinearLayout, RelativeLayout. Относительное/абсолютное задание размеров элементов. Обработчики нажатия.
+##Gradle, Manifest. Activity, View
+
+[Скринкаст занятия](https://www.youtube.com/watch?v=O7kQ3pNC7JE)
 
 ###Gradle
 Система автоматической сборки приложений. Не является особенностью Android, была возможность установить и на Java, но в Android
