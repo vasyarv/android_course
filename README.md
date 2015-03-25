@@ -1,16 +1,16 @@
 # Курс по андроид разработке
 
-##1 занятие, 4 марта
-[Hello world, структура проекта, особенности платформы. Создание эмулятора или подключение телефона. GenyMotion. Введение в Java.](https://github.com/vasyarv/android_course/tree/master/lesson1)
+##[1 занятие, 4 марта](https://github.com/vasyarv/android_course/tree/master/lesson1)
+Hello world, структура проекта, особенности платформы. Создание эмулятора или подключение телефона. GenyMotion. Введение в Java.
 
-##2 занятие, 11 марта
-[Основы Java. Типы данных и операции над ними. ООП в Java: абстракция, инкапсуляция, наследование, полиморфизм.](https://github.com/vasyarv/android_course/tree/master/lesson2)
+##[2 занятие, 11 марта](https://github.com/vasyarv/android_course/tree/master/lesson2)
+Основы Java. Типы данных и операции над ними. ООП в Java: абстракция, инкапсуляция, наследование, полиморфизм.
 
-##3 занятие, 18 марта
-[Gradle, Manifest. Класс Activity и его жизненный цикл. Структура xml файлов. layout.xml файлы Activity. Класс View и элементы Layout: TextView, Button, EditText ... Layout-group: LinearLayout, RelativeLayout. Относительное/абсолютное задание размеров элементов. Обработчики нажатия.](https://github.com/vasyarv/android_course/tree/master/lesson3)
+##[3 занятие, 18 марта](https://github.com/vasyarv/android_course/tree/master/lesson3)
+Gradle, Manifest, Activity, View
 
-##4 занятие, 25 марта
-Intent. Implicitintents и Explicitintents. Передача данных между активити. Всплывающие сообщения и диалоги. Меню. Создание кастомного диалога. Темы и стили. 9 patch. Портретная/альбомная ориентация и разные размеры экрана.
+##[4 занятие, 25 марта](https://github.com/vasyarv/android_course/tree/master/lesson4)
+Intent - явный и неявный. Передача данных между активити. Всплывающие сообщения и диалоги. Меню. Темы и стили. 9 patch. Портретная/альбомная ориентация и разные размеры экрана.
 
 ##5 занятие, 1 апреля
 Способы хранения и передачи данных в приложении. Файлы, Asstets, SharedPrefernces, SQLite. ORM - библиотеки.
