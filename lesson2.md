@@ -169,8 +169,49 @@ http://developer.alexanderklimov.ru/android/texteditor.php
 http://developer.android.com/reference/java/io/BufferedReader.html
 
 http://developer.android.com/reference/java/io/BufferedWriter.html
-##4) Assets
 
+##Assets(Активы)
+Папка для хранения ресурсов, находится на том же уровне, что и *res*.
+Предназначена, чтобы хранить файлы, которые нельзя изменять:
+	1. Шрифты
+	2. Звуки
+	3. Простые текстовые файлы
+Пример чтение текстового файла из активов:
+```java
+	AssetManager am = activity.getAssets();
+	InputStream is = am.open("test.txt");
+	String s = convertStreamToString(is);
+	is.close();
+	return s;
+```
+Пример использования шрифта (assets/fonts):
+```java
+Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/TimesNewRoman.ttf");
+textView.setTypeface(tf);
+```
+Пример использования звуков:
+```java
+public void playBeep() {
+    try {
+        if (m.isPlaying()) {
+            m.stop();
+            m.release();
+            m = new MediaPlayer();
+        }
+
+        AssetFileDescriptor descriptor = getAssets().openFd("beepbeep.mp3");
+        m.setDataSource(descriptor.getFileDescriptor(), descriptor.getStartOffset(), descriptor.getLength());
+        descriptor.close();
+
+        m.prepare();
+        m.setVolume(1f, 1f);
+        m.setLooping(true);
+        m.start();
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+```
 
 ##5) ORM (object-related-mapping)
 
