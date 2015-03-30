@@ -1,6 +1,6 @@
 #Хранение и передача данных в Android приложении.
 
-##1) Shared Preferences
+##Shared Preferences
 
 Набор пар ключ-значение, которые можно получить в любом месте из приложения.
 
@@ -9,7 +9,7 @@
 SharedPreferences sPref;
 ````
   
-Получаем преферны:
+Получаем префернcы:
 ```java  
   sPref = getSharedPreferences("filename-for-preferences",Contex.MODE_PRIVATE);
 ```
@@ -23,15 +23,19 @@ SharedPreferences sPref;
 ```java  
   ed.putString("key", "value"); //также putInt , putFloat и т.д.
   ed.commit(); //закрываем редактор
+  //либо
+  ed.apply(); //закрываем редактор  
  ```
+Разница между commit и apply следующая - apply() возвращает void, а commit() возвращает boolean. apply был добавлен, т.к. было замечено, что почти никто не смотрит на значение возвращаемой величины, и apply работает быстрее.
+
 Получение элемента по ключу
-  Здесь редактор НЕ нужен
+  Здесь создавать editor НЕ нужно
  ```java  
 `  String some_value = sPref.getString("key", "default_value");  //если не получилось вернуть значение по ключу или ключ не найден   - возвращается default_value`
   ```
   
-  SharedPreferences хранятся в файле: `/data/data/имя_пакета/shared_prefs/имя_файла_настроек.xml.`
-  Можно отловить первый запуск приложения.
+SharedPreferences хранятся в файле: `/data/data/имя_пакета/shared_prefs/имя_файла_настроек.xml.`
+Можно отловить первый запуск приложения.
   
 Проверка наличия ключа
 ```java   
@@ -88,7 +92,7 @@ http://startandroid.ru/ru/uroki/vse-uroki-spiskom/73-urok-33-hranenie-dannyh-pre
 
 http://developer.android.com/reference/android/content/SharedPreferences.html
 
-##2) SQLite + SQL
+##SQLite + SQL
 
 SQLite - реляционная БД 
 Базой данных (БД) называется организованная в соответствии с определенными правилами и поддерживаемая в памяти компьютера совокупность сведений об объектах, процессах, событиях или явлениях, относящихся к некоторой предметной области, теме или задаче. Она организована таким образом, чтобы обеспечить информационные потребности пользователей, а также удобное хранение этой совокупности данных, как в целом, так и любой ее части.
@@ -111,12 +115,10 @@ limit 10 --выводим 10 записе
 ###Ссылки
 [Синтаксис](http://developer.alexanderklimov.ru/android/sqlite/azbuka-sqlite.php)
 
-http://developer.alexanderklimov.ru/android/sqlite/simplydatabase.php
+[Работа с базой SQL](http://developer.alexanderklimov.ru/android/sqlite/simplydatabase.php)
 
-
-
-##3) Файлы
-Все приложения в андроиде живут в отдельных контейнерах и по умолчанию не могут друг с другом взаимодействовать. Как следствие, все файл конкретного приложения хранятся в своем контейнере.
+## Файлы
+Все приложения в андроиде живут в отдельных контейнерах и по умолчанию не могут друг с другом взаимодействовать. Как следствие, все файлы конкретного приложения хранятся в своем контейнере.
 Примеры записи файлов:
 ```java
 final String FILENAME = "file.txt";
@@ -126,6 +128,8 @@ void writeFile() {
       // отрываем поток для записи
       BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(
           openFileOutput(FILENAME, MODE_PRIVATE)));
+      //MODE_PRIVATE - режим создания файла. openFileOutput - метод Context, открывает файл на запись
+      //OutputStreamWriter - класс для преобразования потока символов в поток байтов. 
       // пишем данные
       bw.write("Содержимое файла");
       // закрываем поток
@@ -166,6 +170,7 @@ http://developer.android.com/reference/java/io/BufferedReader.html
 
 http://developer.android.com/reference/java/io/BufferedWriter.html
 ##4) Assets
+
 
 ##5) ORM (object-related-mapping)
 
