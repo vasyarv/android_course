@@ -1,5 +1,11 @@
 ##Хранение и передача данных в Android приложении.
-
+###План занятия
+	1. Shared Preferences
+	2. Files
+	3. Assets
+	4. SQlite
+	5. ORM
+	6. Content Provider
 ###Shared Preferences
 
 Набор пар ключ-значение, которые можно получить в любой Activity приложения (а точнее в любом Context)
