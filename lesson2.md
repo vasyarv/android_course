@@ -119,9 +119,16 @@ limit 10 --выводим 10 записе
 В различных СУБД может быть слегка разный синтаксис.
 
 ###Ссылки
+
 [Синтаксис](http://developer.alexanderklimov.ru/android/sqlite/azbuka-sqlite.php)
 
 [Работа с базой SQL](http://developer.alexanderklimov.ru/android/sqlite/simplydatabase.php)
+
+[Работа с курсором](http://developer.alexanderklimov.ru/android/theory/cursor.php)
+
+[Еще про курсор](http://stackoverflow.com/questions/19807916/android-sqlite-custom-query)
+
+[Join с помощью курсора](http://developer.android.com/reference/android/database/CursorJoiner.html)
 
 ## Файлы
 Все приложения в андроиде живут в отдельных контейнерах и по умолчанию не могут друг с другом взаимодействовать. Как следствие, все файлы конкретного приложения хранятся в своем контейнере.
@@ -168,6 +175,8 @@ void writeFile() {
 Читать-писать можно посимвольно, построчно и буфером определенного размера
 
 ###Ссылки
+
+
 http://startandroid.ru/ru/uroki/vse-uroki-spiskom/138-urok-75-hranenie-dannyh-rabota-s-fajlami.html
 
 http://developer.alexanderklimov.ru/android/texteditor.php
