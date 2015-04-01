@@ -37,7 +37,8 @@ SharedPreferences sPref;
 Получение элемента по ключу
   Здесь создавать editor НЕ нужно
  ```java  
-`  String some_value = sPref.getString("key", "default_value");  //если не получилось вернуть значение по ключу или ключ не найден   - возвращается default_value`
+  String some_value = sPref.getString("key", "default_value");  
+//если не получилось вернуть значение по ключу или ключ не найден   - возвращается default_value`
   ```
   
 SharedPreferences хранятся в файле: `/data/data/имя_пакета/shared_prefs/имя_файла_настроек.xml.`
