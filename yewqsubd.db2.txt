@@ -1,0 +1,77 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is up-to-date with 'origin/master'.
+#
+# Changes to be committed:
+#	new file:   lesson5/SQLiteTest/.gitattributes
+#	new file:   lesson5/SQLiteTest/.gitignore
+#	new file:   lesson5/SQLiteTest/.idea/.name
+#	new file:   lesson5/SQLiteTest/.idea/compiler.xml
+#	new file:   lesson5/SQLiteTest/.idea/copyright/profiles_settings.xml
+#	new file:   lesson5/SQLiteTest/.idea/encodings.xml
+#	new file:   lesson5/SQLiteTest/.idea/gradle.xml
+#	new file:   lesson5/SQLiteTest/.idea/misc.xml
+#	new file:   lesson5/SQLiteTest/.idea/modules.xml
+#	new file:   lesson5/SQLiteTest/.idea/scopes/scope_settings.xml
+#	new file:   lesson5/SQLiteTest/.idea/vcs.xml
+#	new file:   lesson5/SQLiteTest/SQLiteTest.iml
+#	new file:   lesson5/SQLiteTest/app/.gitignore
+#	new file:   lesson5/SQLiteTest/app/app.iml
+#	new file:   lesson5/SQLiteTest/app/build.gradle
+#	new file:   lesson5/SQLiteTest/app/proguard-rules.pro
+#	new file:   lesson5/SQLiteTest/app/src/androidTest/java/ru/ryazanoff/sqlitetest/ApplicationTest.java
+#	new file:   lesson5/SQLiteTest/app/src/main/AndroidManifest.xml
+#	new file:   lesson5/SQLiteTest/app/src/main/java/ru/ryazanoff/sqlitetest/DatabaseHelper.java
+#	new file:   lesson5/SQLiteTest/app/src/main/java/ru/ryazanoff/sqlitetest/MainActivity.java
+#	new file:   lesson5/SQLiteTest/app/src/main/res/layout/activity_main.xml
+#	new file:   lesson5/SQLiteTest/app/src/main/res/menu/menu_main.xml
+#	new file:   lesson5/SQLiteTest/app/src/main/res/mipmap-hdpi/ic_launcher.png
+#	new file:   lesson5/SQLiteTest/app/src/main/res/mipmap-mdpi/ic_launcher.png
+#	new file:   lesson5/SQLiteTest/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+#	new file:   lesson5/SQLiteTest/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+#	new file:   lesson5/SQLiteTest/app/src/main/res/values-w820dp/dimens.xml
+#	new file:   lesson5/SQLiteTest/app/src/main/res/values/dimens.xml
+#	new file:   lesson5/SQLiteTest/app/src/main/res/values/strings.xml
+#	new file:   lesson5/SQLiteTest/app/src/main/res/values/styles.xml
+#	new file:   lesson5/SQLiteTest/build.gradle
+#	new file:   lesson5/SQLiteTest/gradle.properties
+#	new file:   lesson5/SQLiteTest/gradle/wrapper/gradle-wrapper.jar
+#	new file:   lesson5/SQLiteTest/gradle/wrapper/gradle-wrapper.properties
+#	new file:   lesson5/SQLiteTest/gradlew
+#	new file:   lesson5/SQLiteTest/gradlew.bat
+#	new file:   lesson5/SQLiteTest/orm/.gitignore
+#	new file:   lesson5/SQLiteTest/orm/build.gradle
+#	new file:   lesson5/SQLiteTest/orm/orm.iml
+#	new file:   lesson5/SQLiteTest/orm/proguard-rules.pro
+#	new file:   lesson5/SQLiteTest/orm/src/androidTest/java/ru/ryazanoff/orm/ApplicationTest.java
+#	new file:   lesson5/SQLiteTest/orm/src/main/AndroidManifest.xml
+#	new file:   lesson5/SQLiteTest/orm/src/main/java/ru/ryazanoff/orm/CommentsListAdapter.java
+#	new file:   lesson5/SQLiteTest/orm/src/main/java/ru/ryazanoff/orm/Data/CommentsRepository.java
+#	new file:   lesson5/SQLiteTest/orm/src/main/java/ru/ryazanoff/orm/Data/DatabaseHelper.java
+#	new file:   lesson5/SQLiteTest/orm/src/main/java/ru/ryazanoff/orm/Data/DatabaseManager.java
+#	new file:   lesson5/SQLiteTest/orm/src/main/java/ru/ryazanoff/orm/MainActivity.java
+#	new file:   lesson5/SQLiteTest/orm/src/main/java/ru/ryazanoff/orm/Model/Comment.java
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/drawable-hdpi/ic_launcher.png
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/drawable-mdpi/ic_launcher.png
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/drawable-xhdpi/ic_launcher.png
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/layout/activity_main.xml
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/layout/comment_list_item.xml
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/menu/main.xml
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/menu/menu_main.xml
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/mipmap-hdpi/ic_launcher.png
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/mipmap-mdpi/ic_launcher.png
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/mipmap-xhdpi/ic_launcher.png
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/mipmap-xxhdpi/ic_launcher.png
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/values-sw600dp/dimens.xml
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/values-sw720dp-land/dimens.xml
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/values-v11/styles.xml
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/values-v14/styles.xml
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/values-w820dp/dimens.xml
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/values/dimens.xml
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/values/strings.xml
+#	new file:   lesson5/SQLiteTest/orm/src/main/res/values/styles.xml
+#	new file:   lesson5/SQLiteTest/settings.gradle
+#
+
