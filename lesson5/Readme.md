@@ -44,14 +44,11 @@ SharedPreferences sPref;
 SharedPreferences хранятся в файле: `/data/data/имя_пакета/shared_prefs/имя_файла_настроек.xml.`
 Можно отловить первый запуск приложения.
   
-Проверка наличия ключа
-```java   
-Boolean b = sPref.contains("key2");
-```
+*Проверка наличия ключа:* `sPref.contains("key2");`
 
-Удаление по ключу: `SharedPreferences.Editor.remove()`
+*Удаление по ключу:* `SharedPreferences.Editor.remove()`
 
-Удаление всего: `SharedPreferences.Editor.clear()`
+*Удаление всего:* `SharedPreferences.Editor.clear()`
 
 И не забываем после этого делать commit или apply.
   
