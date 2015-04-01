@@ -12,7 +12,7 @@ Gradle, Manifest, Activity, View
 ##[4 занятие, 25 марта](https://github.com/vasyarv/android_course/tree/master/lesson4)
 Intent - явный и неявный. Передача данных между активити. Всплывающие сообщения и диалоги. Меню. Темы и стили. 9 patch. Портретная/альбомная ориентация и разные размеры экрана.
 
-##5 занятие, 1 апреля
+##[5 занятие, 1 апреля](https://github.com/vasyarv/android_course/tree/master/lesson5)
 Способы хранения и передачи данных в приложении. Файлы, Asstets, SharedPrefernces, SQLite. ORM - библиотеки.
 
 ##6 занятие, 8 апреля
