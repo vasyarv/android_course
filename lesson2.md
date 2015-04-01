@@ -42,7 +42,11 @@ SharedPreferences хранятся в файле: `/data/data/имя_пакет�
 Boolean b = sPref.contains("key2");
 ```
 
-Ключ - всегда строка
+Удаление по ключу: `SharedPreferences.Editor.remove()`
+
+Удаление всего: `SharedPreferences.Editor.clear()`
+
+И не забываем после этого делать commit или apply.
   
 Работа с наборами ( <set> )
 
@@ -84,6 +88,8 @@ protected void saveActivityPreferences() {
     editor.commit();
 }
 ```
+
+После удаления приложения SharedPreferences тоже удаляются, но можно воспользоваться [BackupAgentHelper](http://developer.android.com/reference/android/app/backup/BackupAgentHelper.html)
 
 ###Ссылки:
 http://developer.alexanderklimov.ru/android/theory/sharedpreferences.php
