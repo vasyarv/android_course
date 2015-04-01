@@ -1,6 +1,6 @@
-#Хранение и передача данных в Android приложении.
+##Хранение и передача данных в Android приложении.
 
-##Shared Preferences
+###Shared Preferences
 
 Набор пар ключ-значение, которые можно получить в любой Activity приложения (а точнее в любом Context)
 
@@ -91,14 +91,14 @@ protected void saveActivityPreferences() {
 
 После удаления приложения SharedPreferences тоже удаляются, но можно воспользоваться [BackupAgentHelper](http://developer.android.com/reference/android/app/backup/BackupAgentHelper.html)
 
-###Ссылки:
+####Ссылки:
 http://developer.alexanderklimov.ru/android/theory/sharedpreferences.php
 
 http://startandroid.ru/ru/uroki/vse-uroki-spiskom/73-urok-33-hranenie-dannyh-preferences
 
 http://developer.android.com/reference/android/content/SharedPreferences.html
 
-##SQLite + SQL
+###SQLite + SQL
 
 SQLite - реляционная БД 
 Базой данных (БД) называется организованная в соответствии с определенными правилами и поддерживаемая в памяти компьютера совокупность сведений об объектах, процессах, событиях или явлениях, относящихся к некоторой предметной области, теме или задаче. Она организована таким образом, чтобы обеспечить информационные потребности пользователей, а также удобное хранение этой совокупности данных, как в целом, так и любой ее части.
@@ -118,7 +118,7 @@ limit 10 --выводим 10 записе
 Можно объединять таблицы с помощью `join`
 В различных СУБД может быть слегка разный синтаксис.
 
-###Ссылки
+####Ссылки
 
 [Синтаксис](http://developer.alexanderklimov.ru/android/sqlite/azbuka-sqlite.php)
 
@@ -130,7 +130,7 @@ limit 10 --выводим 10 записе
 
 [Join с помощью курсора](http://developer.android.com/reference/android/database/CursorJoiner.html)
 
-## Файлы
+### Файлы
 Все приложения в андроиде живут в отдельных контейнерах и по умолчанию не могут друг с другом взаимодействовать. Как следствие, все файлы конкретного приложения хранятся в своем контейнере.
 Примеры записи файлов:
 ```java
@@ -174,7 +174,7 @@ void writeFile() {
 ```
 Читать-писать можно посимвольно, построчно и буфером определенного размера
 
-###Ссылки
+####Ссылки
 
 
 http://startandroid.ru/ru/uroki/vse-uroki-spiskom/138-urok-75-hranenie-dannyh-rabota-s-fajlami.html
@@ -185,7 +185,7 @@ http://developer.android.com/reference/java/io/BufferedReader.html
 
 http://developer.android.com/reference/java/io/BufferedWriter.html
 
-##Assets(Активы)
+###Assets(Активы)
 Папка для хранения ресурсов, находится на том же уровне, что и *res*.
 Предназначена, чтобы хранить файлы, которые нельзя изменять:
 	1. Шрифты
@@ -228,14 +228,14 @@ public void playBeep() {
 }
 ```
 
-##5) ORM (object-related-mapping)
+###5) ORM (object-related-mapping)
 Расскажу на примере ORMlite, хотя это не единственная библиотека. [Остальные библиотеки](http://habrahabr.ru/company/yotadevices/blog/242559/)
 Установка: `compile 'com.j256.ormlite:ormlite-android:4.46'`
 
 [Примеры](http://ormlite.com/android/examples/)
 
 
-##6) ContentProvider
+###6) ContentProvider
 Способ расширить данные вашего приложения до других приложений. 
 http://developer.alexanderklimov.ru/android/theory/contentprovider.php
 
