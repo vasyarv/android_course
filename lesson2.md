@@ -229,4 +229,14 @@ public void playBeep() {
 ```
 
 ##5) ORM (object-related-mapping)
+Расскажу на примере ORMlite, хотя это не единственная библиотека. [Остальные библиотеки](http://habrahabr.ru/company/yotadevices/blog/242559/)
+Установка: `compile 'com.j256.ormlite:ormlite-android:4.46'`
 
+[Примеры](http://ormlite.com/android/examples/)
+
+
+##6) ContentProvider
+Способ расширить данные вашего приложения до других приложений. 
+http://developer.alexanderklimov.ru/android/theory/contentprovider.php
+
+http://startandroid.ru/ru/uroki/vse-uroki-spiskom/166-urok-101-sozdaem-svoj-contentprovider
