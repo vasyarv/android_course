@@ -15,8 +15,8 @@ Intent - явный и неявный. Передача данных между 
 ##[5 занятие, 1 апреля](https://github.com/vasyarv/android_course/tree/master/lesson5)
 Способы хранения и передачи данных в приложении. Файлы, Asstets, SharedPrefernces, SQLite. ORM - библиотеки.
 
-##6 занятие, 8 апреля
-Кастомные элементы управления. NavigationDrawer, Адаптеры, Фрагменты. Многопоточность в Android.
+##[6 занятие, 8 апреля](https://github.com/vasyarv/android_course/tree/master/lesson6)
+Фрагменты. Меню сбоку в стиле Material Desogn. Многопоточность.
 
 ##7 занятие, 15 апреля
 Графика и анимация. Рисование форм. Покадровая анимация, tween. Звуки.
