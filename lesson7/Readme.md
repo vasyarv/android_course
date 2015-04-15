@@ -57,4 +57,7 @@ private class MyAsyncTask extends AsyncTask<String, Integer, Integer> {
 
 [Урок](http://developer.alexanderklimov.ru/android/theory/asynctask.php)
 
+####А в чем разница?
+Thread,Runnable, Handler - для выполнения любых операций в параллельных потоках
 
+AsyncTask - для выполнения какой-то КОНКРЕТНОЙ операции в фоновом потоке (загрузка файлов, обратный отсчёт и т.д.)
