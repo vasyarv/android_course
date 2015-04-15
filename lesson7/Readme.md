@@ -20,6 +20,10 @@
 
 [Еще один способ работы с Thread](http://developer.alexanderklimov.ru/android/java/thread.php)
 
+[Уроки 1](http://developer.alexanderklimov.ru/android/theory/thread.php)
+
+[Уроки 2](http://startandroid.ru/ru/uroki/vse-uroki-spiskom/143-urok-80-handler-nemnogo-teorii-nagljadnyj-primer-ispolzovanija.html)
+
 ###AsyncTask
 AsyncTask - простой класс для перемещения трудоемких операций в фоновый поток. 
 
