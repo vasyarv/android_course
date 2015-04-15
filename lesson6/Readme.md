@@ -267,10 +267,3 @@ activity_main.xml
 Андроид программисты называют такое меню *Navigation Drawer*. Можно пробовать с нуля это делать, но вряд ли с первого раза получится очень красиво. Тем более существует уже целая куча готовых решений. 
 
 Чтобы установить такую менюшку и посмотреть аналоги обратимся к [уроку с Хабра](http://habrahabr.ru/post/250765/)
-
-###Многопоточность в андроид
-####Handler
-####AsyncTask
-http://developer.alexanderklimov.ru/android/theory/thread.php
-
-http://habrahabr.ru/company/eastbanctech/blog/192998/
