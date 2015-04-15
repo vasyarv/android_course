@@ -16,13 +16,13 @@ Intent - явный и неявный. Передача данных между 
 Способы хранения и передачи данных в приложении. Файлы, Asstets, SharedPrefernces, SQLite. ORM - библиотеки.
 
 ##[6 занятие, 8 апреля](https://github.com/vasyarv/android_course/tree/master/lesson6)
-Фрагменты. Меню сбоку в стиле Material Desogn. Многопоточность.
+Фрагменты. Меню сбоку в стиле Material Desogn. 
 
-##7 занятие, 15 апреля
-Графика и анимация. Рисование форм. Покадровая анимация, tween. Звуки.
+##[7 занятие, 15 апреля](https://github.com/vasyarv/android_course/tree/master/lesson7)
+Работа с потоками в Android. 
 
 ##8 занятие, 22 апреля
-Работа с сетью и сервером. HttpRequest. Parse.com. Pubnub.
+Работа с сетью и сервером. HttpRequest. Parse.com.
 
 ##9 занятие, 29 апреля
 Создание ключа для приложения. Релиз. Публикация и продвижение в Google Play. Способы монетизации приложений. AdMob. Аналитика приложеня.
