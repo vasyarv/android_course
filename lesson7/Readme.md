@@ -12,9 +12,49 @@
 по кнопке.
 
 Последовательность следующая.
-  1. Создаётся объект класса Runnable, в котором прописывается логика
+  1. Реализуем метод run() интерфейса Runnable, в котором прописывается логика
   2. Для взаимодействия с UI используется Handler и сообщения
   3. Создаётся Thread с Runnable
   
+Пример использования [synchronized](https://github.com/vasyarv/android_course/blob/master/synchronized.md)
+
+[Еще один способ работы с Thread](http://developer.alexanderklimov.ru/android/java/thread.php)
+
+###AsyncTask
+AsyncTask - простой класс для перемещения трудоемких операций в фоновый поток. 
+
+Работать напрямую с AsyncTask нельзя, необходимо от него наследоваться, определяя 3 параметра (впрочем все 3 можно сделать Void)
+
+Формат AsyncTask:
+`AsyncTask<[Input Parameter Type], [Progress Report Type], [Result Type]>`
+
+Каркас AsyncTask:
+```java
+private class MyAsyncTask extends AsyncTask<String, Integer, Integer> {
+    @Override
+    protected void onProgressUpdate(Integer... progress) {
+        // [... Обновите индикатор хода выполнения, уведомления или другой   
+        // элемент пользовательского интерфейса ...]
+    }
+    
+	@Override
+    protected void onPostExecute(Integer... result) {
+        // [... Сообщите о результате через обновление пользовательского 
+        // интерфейса, диалоговое окно или уведомление ...]
+    }
+   
+   @Override
+    protected Integer doInBackground(String... parameter) {
+        int myProgress = 0;
+        // [... Выполните задачу в фоновом режиме, обновите переменную myProgress...]
+        publishProgress(myProgress);
+        // [... Продолжение выполнения фоновой задачи ...]
+        // Верните значение, ранее переданное в метод onPostExecute
+        return result;
+    }
+}
+```
+
+[Урок](http://developer.alexanderklimov.ru/android/theory/asynctask.php)
 
 
