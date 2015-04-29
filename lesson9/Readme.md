@@ -16,6 +16,7 @@
 
 Добавляем
 
+```gradle
 signingConfigs {
         release {
             storeFile file("my-release-key.keystore")
@@ -24,12 +25,13 @@ signingConfigs {
             keyPassword "***"
         }
     }
-    ```
+```
 
 
     Пример gradle файла
 
-```python    
+
+```gradle
 apply plugin: 'com.android.application'
 
 android {
@@ -77,3 +79,4 @@ dependencies {
     compile 'com.google.android.gms:play-services:6.+'
 
 }
+```
