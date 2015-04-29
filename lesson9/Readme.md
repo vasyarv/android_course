@@ -2,7 +2,16 @@
 
 1) Получаем ключ через keytool Кладем его в папку app (название модуля) 
 
-2) Нажимаем вкладку Gradle, выбираем assembleRelease Меняем файл build gradle Во вкладку андроид добавляем android { lintOptions { checkReleaseBuilds false // Or, if you prefer, you can continue to check for errors in release builds, // but continue the build even when errors are found: abortOnError false } }
+2) Нажимаем вкладку Gradle, выбираем assembleRelease Меняем файл build gradle Во вкладку андроид добавляем 
+
+```gradle
+    android { 
+        lintOptions { 
+            checkReleaseBuilds false // Or, if you prefer, you can continue to check for errors in release builds, 
+            // but continue the build even when errors are found: abortOnError false 
+        } 
+    }
+```
 
 Меняем вкладку релиз
 
