@@ -2,6 +2,10 @@
 
 1) Получаем ключ через keytool Кладем его в папку app (название модуля) 
 
+Раньше тут всё было сложно, теперь всё делается из Android Studio
+
+[http://developer.android.com/tools/publishing/app-signing.html](http://developer.android.com/tools/publishing/app-signing.html)
+
 2) Нажимаем вкладку Gradle, выбираем assembleRelease Меняем файл build gradle Во вкладку андроид добавляем 
 
 ```gradle
